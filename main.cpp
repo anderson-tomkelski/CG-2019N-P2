@@ -31,7 +31,7 @@ const char *fragmentShaderSource = "#version 330 core\n"
 "	{\n"
 "		color = vec4(0.0f, 0.0f, 1.0f, 1.0f);\n"
 "	}\n"
-"   FragColor = ourColor;\n"
+"   FragColor = color;\n"
 "}\n\0";
 
 
