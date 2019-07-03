@@ -1,6 +1,11 @@
 /**
- * Basic usege of OpenGL and GLFW. 
- */
+* O objetivo desse trabalho é mostrar um triangulo pintado de amarelo de seu inicio a esquerda até a metade
+* E da metade até a direita pintado de azul
+* Nome: Anderson Altair Tomkelski
+* Email: ander.tomkelski@gmail.com
+*
+*
+**/
 
 #include <iostream>
 
