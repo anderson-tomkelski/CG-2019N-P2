@@ -21,11 +21,16 @@ const char *vertexShaderSource = "#version 330 core\n"
 "}\0";
 const char *fragmentShaderSource = "#version 330 core\n"
 "out vec4 FragColor;\n"
-"uniform vec4 ourColor;\n"
 "uniform vec2 size;\n"
 "void main()\n"
 "{\n"
-"	vec2 st = gl_FragCoord.xy/size;"
+"	vec2 st = gl_FragCoord.xy/size;\n"
+"	vec4 color;\n"
+"	color = vec4(1.0f, 1.0f, 0.0f, 1.0f);\n"
+"	if(st.x > 0.5)\n"
+"	{\n"
+"		color = vec4(0.0f, 0.0f, 1.0f, 1.0f);\n"
+"	}\n"
 "   FragColor = ourColor;\n"
 "}\n\0";
 
